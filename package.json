@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "client": "webpack serve --config ./src/client/webpack.config.dev.js",
-    "build": "webpack --progress --config ./src/client/webpack.config.js",
+    "build": "webpack --progress --config ./src/client/webpack.config.dev.js",
     "serve": "cross-env NODE_ENV=development npx nodemon ./src/server/index.js",
     "start": "cross-env NODE_ENV=production node ./src/server/index.js",
     "lint": "eslint src/**/*.js --fix"
